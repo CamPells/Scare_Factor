@@ -1,5 +1,6 @@
 import "./App.css";
 import { useState, useEffect } from "react";
+import Movie from "./components/Movie";
 
 function App() {
   return (
@@ -11,16 +12,10 @@ function App() {
       }}
     >
       <h1>Scare Factor</h1>
-      <div style={{ border: "2px solid black", padding: "2rem" }}>
-        <div>
-          <img src="src/assets/The_Autopsy_of_Jane_Doe.jpg" alt="test" />
-          <div>description: </div>
-          <div>director</div>
-        </div>
-        <div style={{ display: "inline-block", paddingTop: "1Rem" }}>
-          <button>Yes</button>
-          <button>No</button>
-        </div>
+      <Movie />
+      <div style={{ display: "inline-block", paddingTop: "1Rem" }}>
+        <button>Yes</button>
+        <button>No</button>
       </div>
     </div>
   );
